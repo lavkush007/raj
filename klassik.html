@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>java script
+</title>
+</head>	
+<script>
+	function myfunction() {
+	var first= document.getElementById ("textbox1"). value;
+	var second= document.getElementById ("textbox2"). value;
+	var three= document.getElementById ("textbox3"). value;
+	var foure= document.getElementById ("textbox4"). value;
+	var answer= parseFloat(first)+parseFloat (second)+parseFloat (three)+parseFloat (foure);
+	//varanswer1= parse Float(three)+ parse Float(foure);
+	document.getElementById ('textbox5'). value=answer;
+}
+	</script>
+	<body>
+	<input type="text"name="textbox1"id="textbox1"/>+<input type="text"name="textbox2"id="textbox2"/>+
+	<input type="text"name="textbox3"id="textbox3"/>+<input type="text"name="textbox4"id="textbox4"/>
+	<input type="submit"name="button"id="button1"onClick="myfunction()"value="="/>
+	<br/>
+	your answer is:-
+	<input type="text"name="textbox5"id="textbox5"readonly="true"/>
+</body>
